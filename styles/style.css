@@ -55,6 +55,7 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -82,6 +83,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   overflow-y: scroll;
+  position: relative;
 }
 
 .content__video-card {
