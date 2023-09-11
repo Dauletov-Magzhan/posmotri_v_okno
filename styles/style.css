@@ -38,17 +38,12 @@ ol {
 }
 
 .content {
-  margin: 133px auto;
-  padding: 0px 30px 0px 30px;
+  margin: 133px 30px;
   display: flex;
   gap: 30px;
   align-items: end;
   width: 1140px;
   height: 535px;
-}
-
-.result {
-  
 }
 
 .result__video-container {
@@ -68,38 +63,6 @@ ol {
   justify-content: space-between;
   align-items: end;
   gap: 40px;
-}
-
-.content__details {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.content__list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  overflow-y: scroll;
-  position: relative;
-}
-
-.content__video-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.content__video-card-thumbnail {
-  min-width: 194px;
-  height: 103px;
-}
-
-.content__video-card-description-container {
-  width: 100%;
-  height: 100%;
 }
 
 .search-form__fieldset-title {
@@ -171,6 +134,19 @@ ol {
   cursor: pointer;
 }
 
+.search-form__label:has(.search-form__textfield:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__label:hover:not(#search-form__label) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .search-form__textfield {
   width: 225px;
   height: 27px;
@@ -189,19 +165,6 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__label:has(.search-form__textfield:focus-visible) {
-  outline: 1px solid #fff;
-}
-
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff;
-}
-
-.search-form__label:hover:not(#search-form__label) {
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .search-form__pseudo-checkbox {  
@@ -256,9 +219,41 @@ ol {
   background-color: #545050;
 }
 
+.content__details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .content__video-card:hover {
   text-decoration: underline ;
   text-underline-offset: 5px;
+}
+
+.content__video-card-thumbnail {
+  min-width: 194px;
+  height: 103px;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+  height: 100%;
 }
 
 .content__card-link {
